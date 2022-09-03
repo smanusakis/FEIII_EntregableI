@@ -16,6 +16,8 @@ export default function Cabecera({ totalComprasC }) {
         <div className={styles.texto}>
           <h1>Total en el carrito</h1>
           <p>
+            {" "}
+            className={styles.sticky}
             Cantidad de productos: <span>{totalComprasC}</span>
           </p>
         </div>
