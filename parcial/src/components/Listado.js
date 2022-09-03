@@ -10,7 +10,7 @@ import styles from "../styles/listado.module.css";
 // MÉTODOS: Listado no requiere de métodos.
 // PROPS: Listado recibe el método para aumentar el estado de App y se lo pasa a cada uno de sus hijos.
 
-export default function Listado({ totalCompras }) {
+export default function Listado({ totalComprasN }) {
   return (
     <div className={styles.container}>
       {data.map((item) => (
@@ -19,7 +19,7 @@ export default function Listado({ totalCompras }) {
           nombre={item.producto.nombre}
           descripcion={item.producto.descripcion}
           stock={item.stock}
-          totalCompra={totalCompras}
+          totalComprasN={totalComprasN}
         ></Item>
       ))}
     </div>

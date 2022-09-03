@@ -1,0 +1,12 @@
+.cabecera {
+    background-color: rgb(80, 80, 80);
+    display: block;
+    margin: 0px;
+    max-height: 100%;
+}
+
+.texto{
+    color: white;
+    margin: 1rem;
+    padding: 0.7rem;
+}

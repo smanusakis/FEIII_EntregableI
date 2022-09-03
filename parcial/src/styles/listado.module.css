@@ -1,10 +1,9 @@
 .container {
-    background-size: 100% 1px;
+    background-color: rgb(172, 171, 165);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    min-height: 600px;
     padding: 1rem;
   
   }

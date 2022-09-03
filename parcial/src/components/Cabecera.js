@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../styles/cabecera.module.css";
 
 // El componente Cabera no tiene componentes hijos.
 // ESTADO: Cabecera no tiene estado.
@@ -8,15 +9,16 @@ import React from "react";
 //    h1
 //    p > span     (el span mostrará la cantidad recibida por props)
 
-export default function Cabecera({ totalCompras }) {
+export default function Cabecera({ totalComprasC }) {
   return (
     <>
-      <header>
-        <h1>Total en el carrito</h1>
-        <p>
-          {" "}
-          Cantidad de productos: <span>{totalCompras}</span>
-        </p>
+      <header className={styles.cabecera}>
+        <div className={styles.texto}>
+          <h1>Total en el carrito</h1>
+          <p>
+            Cantidad de productos: <span>{totalComprasC}</span>
+          </p>
+        </div>
       </header>
     </>
   );

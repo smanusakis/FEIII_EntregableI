@@ -10,11 +10,12 @@
 import { useState } from "react";
 import styles from "../styles/item.module.css";
 
-export default function Item({ nombre, descripcion, stock, totalCompras }) {
+export default function Item({ nombre, descripcion, stock, totalComprasN }) {
   const [stockActual, setStock] = useState(stock);
+
   const restCompras = () => {
     stockActual > 0 && setStock(stockActual - 1);
-    totalCompras();
+    totalComprasN();
   };
 
   return (
@@ -22,7 +23,7 @@ export default function Item({ nombre, descripcion, stock, totalCompras }) {
       <h3>{nombre}</h3>
       <p>{descripcion}</p>
       <h5>
-        En Stock:{" "}
+        Unidades:{" "}
         {stockActual > 0 ? (
           <span> {stockActual}</span>
         ) : (
@@ -30,9 +31,13 @@ export default function Item({ nombre, descripcion, stock, totalCompras }) {
         )}{" "}
       </h5>
       {stockActual > 0 ? (
-        <button onClick={restCompras}>Comprar</button>
+        <button className={styles.btn} onClick={restCompras}>
+          Comprar
+        </button>
       ) : (
-        <button disabled>Sin Stock</button>
+        <button className={styles.btnOS} disabled>
+          Sin Stock
+        </button>
       )}
     </div>
   );

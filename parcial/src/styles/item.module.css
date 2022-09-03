@@ -1,10 +1,46 @@
 .producto{
     background:beige;
+    border: solid grey;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 300px;
+    width: 330px;
+    max-height: 420px;
     text-align: center;
     padding: 1rem;
-    border-radius: 10%;
+    border-radius: 5%;
+  }
+
+  .btn {
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.375);
+    background-color: rgb(224, 211, 173);
+    border-radius: 5px;
+    font-weight: 800;
+    text-align: center;
+    padding: 0.7rem;
+    max-width: 200px;
+    margin: 1px auto;
+  }
+
+  .btnOS {
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.375);
+    background-color: rgb(224, 211, 173);
+    border-radius: 5px;
+    font-weight: 800;
+    text-align: center;
+    padding: 0.7rem;
+    max-width: 200px;
+    margin: 1px auto;
+  }
+
+  .btn:hover{
+    background-color: rgba(224, 211, 173, 0.527);
+  }
+
+  .btn:active {
+    background-color:rgba(224, 211, 173, 0.527);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.375);
+    transform: translateY(4px);
   }
