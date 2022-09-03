@@ -1,0 +1,10 @@
+.producto{
+    background:beige;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10%;
+  }

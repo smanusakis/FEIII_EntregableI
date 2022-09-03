@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 // El componente Cabera no tiene componentes hijos.
 // ESTADO: Cabecera no tiene estado.
@@ -8,11 +8,16 @@ import React from 'react'
 //    h1
 //    p > span     (el span mostrará la cantidad recibida por props)
 
-export default function Cabecera() {
-  
+export default function Cabecera({ totalCompras }) {
   return (
-    <header>
-        {/* maquetar Cabecera aquí */}
-    </header>
-  )
+    <>
+      <header>
+        <h1>Total en el carrito</h1>
+        <p>
+          {" "}
+          Cantidad de productos: <span>{totalCompras}</span>
+        </p>
+      </header>
+    </>
+  );
 }
